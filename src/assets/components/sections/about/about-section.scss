@@ -1,0 +1,48 @@
+.about {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	// border-top: 1px solid var(--white);
+	padding: 0 0 100rem 0;
+
+	.left {
+		flex: 2;
+		border-right: 1px solid var(--white);
+
+		.title {
+			font-size: 100rem;
+			border-bottom: 1px solid var(--white);
+		}
+
+		.description {
+			color: var(--primary);
+			font-size: 24rem;
+			padding: 50rem 50rem 50rem 0;
+			border-bottom: 1px solid var(--white);
+
+			p {
+				padding: 20rem;
+			}
+		}
+
+		.is-that-you-container {
+			display: flex;
+			flex: 3;
+
+			.left {
+				padding: 50rem 50rem 50rem 0;
+				p {
+					color: var(--primary);
+					font-size: 24rem;
+					padding: 20rem;
+				}
+			}
+
+			.right {
+				padding: 50rem;
+				font-size: 100rem;
+				line-height: 80rem;
+			}
+		}
+	}
+}

@@ -5,16 +5,26 @@ interface IButtonProps {
 	children: string;
 	color?: string;
 	textColor?: string;
+	border?: string;
+	link?: string;
 }
 
-const Button = ({ children, color = "#fff", textColor = "#c3a060" }: IButtonProps) => {
+const Button = ({
+	children,
+	color = "#fff",
+	textColor = "#c3a060",
+	border = "none",
+	link,
+}: IButtonProps) => {
 	return (
 		<motion.button
 			whileTap={{ scale: 0.95 }}
 			className="mainButton"
-			style={{ backgroundColor: color, color: textColor }}
+			style={{ backgroundColor: color, color: textColor, border: `3px solid ${border}` }}
 		>
-			{children}
+			<a href={link} target="_blank">
+				{children}
+			</a>
 		</motion.button>
 	);
 };

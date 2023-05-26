@@ -1,0 +1,60 @@
+.formation {
+	background: linear-gradient(to top, var(--bg) 0%, transparent 50%, var(--bg) 100%),
+		url("../../../images/formation-bg.png") no-repeat center;
+	background-size: cover;
+	padding: 100rem 0;
+	width: 100%;
+	margin: auto;
+	.header {
+		margin-bottom: 80px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		h2 {
+			font-size: 200rem;
+			line-height: 100rem;
+		}
+
+		.courses {
+			opacity: 0.2;
+		}
+		.certificate {
+			opacity: 0.2;
+			align-self: end;
+		}
+	}
+
+	.content {
+		display: flex;
+		width: 80%;
+		margin: auto;
+
+		h3 {
+			font-size: 80rem;
+			line-height: 80rem;
+			margin-bottom: 60rem;
+		}
+
+		li {
+			list-style: none;
+			font-family: "Roboto", sans-serif;
+			font-size: 30rem;
+			line-height: 30rem;
+			margin-bottom: 20rem;
+
+			span {
+				font-size: 22rem;
+			}
+		}
+		.left {
+			flex: 1;
+			text-align: right;
+			padding: 50rem;
+			border-right: 1px solid var(--white);
+		}
+		.right {
+			flex: 1;
+			padding: 50rem;
+		}
+	}
+}
