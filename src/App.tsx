@@ -1,6 +1,5 @@
 import "./App.scss";
 import { motion } from "framer-motion";
-import Button from "./assets/components/button/Button";
 import PortfolioCover from "./assets/components/portfolio-cover/PortfolioCover";
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
