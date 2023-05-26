@@ -1,0 +1,28 @@
+.portfolio-cover {
+	min-width: 300px;
+	max-width: 80%;
+	min-height: 300px;
+	background-color: var(--primary);
+	padding: 50rem;
+
+	display: flex;
+	justify-content: end;
+	align-items: end;
+
+	.info {
+		position: relative;
+		left: 250px;
+		max-width: 550px;
+		display: flex;
+		flex-direction: column;
+		gap: 15rem;
+		h3 {
+			font-size: 60rem;
+		}
+
+		.buttons {
+			display: flex;
+			gap: 15rem;
+		}
+	}
+}
