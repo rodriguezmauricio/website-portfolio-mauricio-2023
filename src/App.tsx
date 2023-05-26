@@ -1,6 +1,7 @@
 import "./App.scss";
 import { motion } from "framer-motion";
 import PortfolioCover from "./assets/components/portfolio-cover/PortfolioCover";
+import imagemSobre from "./assets/images/phone-img.png";
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import {
@@ -250,7 +251,7 @@ function App() {
 						</div>
 					</div>
 					<div className="right">
-						<img src="src/assets/images/phone-img.png" alt="" />
+						<img src={imagemSobre} alt="Mauricio Rodriguez" />
 						{/* <img src="./assets/images/phone-img.png" alt="" /> */}
 					</div>
 				</section>
