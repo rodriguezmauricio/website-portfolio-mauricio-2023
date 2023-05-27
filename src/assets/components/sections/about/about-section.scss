@@ -23,6 +23,12 @@
 			padding: 50rem 50rem 50rem 0;
 			border-bottom: 1px solid var(--white);
 
+			h2 {
+				font-size: 36rem;
+				padding-left: 20rem;
+				color: var(--white);
+			}
+
 			p {
 				padding: 20rem;
 			}
@@ -34,6 +40,13 @@
 
 			.left {
 				padding: 50rem 50rem 50rem 0;
+
+				h2 {
+					font-size: 36rem;
+					padding-left: 20rem;
+					color: var(--white);
+				}
+
 				p {
 					color: var(--primary);
 					font-size: 24rem;
