@@ -12,7 +12,7 @@ interface IButtonProps {
 const Button = ({
 	children,
 	color = "#fff",
-	textColor = "#c3a060",
+	textColor = "#eebd64",
 	border = "none",
 	link,
 }: IButtonProps) => {

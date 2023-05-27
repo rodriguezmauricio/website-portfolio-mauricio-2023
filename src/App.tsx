@@ -6,10 +6,10 @@ import FormationSection from "./assets/components/sections/formation/FormationSe
 import ContactSection from "./assets/components/sections/contact/ContactSection";
 import ResumeSection from "./assets/components/sections/resume/ResumeSection";
 import Navigation from "./assets/components/navigation/Navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
-	const [language, setLanguage] = useState("br");
+	const [language, setLanguage] = useState("en");
 
 	const scrollToSection = (id: string) => {
 		const element = document.querySelector(`#${id}`);
@@ -24,12 +24,42 @@ function App() {
 		}
 	};
 
+	const [activeSection, setActiveSection] = useState("intro-section");
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const sections = document.querySelectorAll("section");
+
+			sections.forEach((section) => {
+				const { top, bottom } = section.getBoundingClientRect();
+				const { innerHeight } = window;
+
+				if (top <= innerHeight / 2 && bottom >= innerHeight / 2) {
+					setActiveSection(section.id);
+				} else if (window.pageYOffset === 0) {
+					setActiveSection("intro-section");
+				}
+			});
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
+	const getMenuItemColor = (itemId: string) => {
+		return itemId === activeSection ? "#eebd64" : "#fff";
+	};
+
 	return (
 		<main>
 			<Navigation
 				language={language}
 				setLanguage={setLanguage}
 				scrollToSection={scrollToSection}
+				getMenuItemColor={getMenuItemColor}
 			/>
 			<IntroSection language={language} />
 			<PortfolioSection language={language} />

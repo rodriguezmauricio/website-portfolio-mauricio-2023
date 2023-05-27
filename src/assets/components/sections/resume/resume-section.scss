@@ -7,3 +7,20 @@
 		font-size: 200rem;
 	}
 }
+
+@media (max-width: 1050px) {
+	.resume {
+		h2 {
+			font-size: 150rem;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.resume {
+		width: 90%;
+		h2 {
+			font-size: 100rem;
+		}
+	}
+}

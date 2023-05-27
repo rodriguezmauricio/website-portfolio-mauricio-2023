@@ -9,11 +9,11 @@ const ResumeSection = ({ language }: IResumeSection) => {
 		<section className="resume" id="resume-section">
 			{language === "en" ? (
 				<>
-					<h2>05/Resume.</h2>
+					<h2>Resume.</h2>
 				</>
 			) : (
 				<>
-					<h2>05/Currículo.</h2>
+					<h2>Currículo.</h2>
 				</>
 			)}
 		</section>

@@ -13,8 +13,6 @@ const ContactSection = ({ language }: IContactSection) => {
 					{language === "en" ? (
 						<>
 							<h2>
-								06/
-								<br />
 								Con
 								<br />
 								tact.
@@ -23,8 +21,6 @@ const ContactSection = ({ language }: IContactSection) => {
 					) : (
 						<>
 							<h2>
-								06/
-								<br />
 								Con
 								<br />
 								tato.

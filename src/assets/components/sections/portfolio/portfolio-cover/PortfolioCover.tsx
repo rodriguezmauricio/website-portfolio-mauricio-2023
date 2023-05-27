@@ -24,7 +24,7 @@ const PortfolioCover = ({
 				background: `url("${bgImage}")`,
 				backgroundSize: "cover",
 				backgroundBlendMode: "multiply",
-				backgroundColor: "#c3a060",
+				backgroundColor: "#eebd64",
 			}}
 			whileHover={{
 				backgroundBlendMode: "normal",
@@ -38,14 +38,18 @@ const PortfolioCover = ({
 				<h3>{projectName}</h3>
 				<div className="buttons">
 					{projectLink && (
-						<Button textColor="#111" link={projectLink} border="#c3a060">
-							VIEW PROJECT
-						</Button>
+						<div className="button">
+							<Button textColor="#111" link={projectLink} border="#eebd64">
+								VIEW PROJECT
+							</Button>
+						</div>
 					)}
 					{repositoryLink && (
-						<Button textColor="#111" link={repositoryLink} border="#c3a060">
-							VIEW REPOSITORY
-						</Button>
+						<div className="button">
+							<Button textColor="#111" link={repositoryLink} border="#eebd64">
+								VIEW REPOSITORY
+							</Button>
+						</div>
 					)}
 				</div>
 			</div>

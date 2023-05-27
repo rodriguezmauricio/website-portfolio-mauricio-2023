@@ -35,15 +35,21 @@
 			margin-bottom: 60rem;
 		}
 
-		li {
-			list-style: none;
-			font-family: "Roboto", sans-serif;
-			font-size: 30rem;
-			line-height: 30rem;
-			margin-bottom: 20rem;
+		ul {
+			li {
+				list-style: none;
+				font-family: "Roboto", sans-serif;
+				font-size: 30rem;
+				line-height: 30rem;
+				margin-bottom: 20rem;
 
-			span {
-				font-size: 22rem;
+				span {
+					font-size: 22rem;
+				}
+			}
+
+			&.mobile-list {
+				display: none;
 			}
 		}
 		.left {
@@ -55,6 +61,128 @@
 		.right {
 			flex: 1;
 			padding: 50rem;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.formation {
+		background: linear-gradient(to top, var(--bg) 0%, transparent 50%, var(--bg) 100%),
+			url("../../../images/formation-bg.png") no-repeat center;
+		background-size: cover;
+		padding: 100rem 0;
+		width: 100%;
+		margin: auto;
+		.header {
+			margin-bottom: 80px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			h2 {
+				font-size: 200rem;
+				line-height: 100rem;
+			}
+
+			.courses {
+				opacity: 0.2;
+			}
+			.certificate {
+				opacity: 0.2;
+				align-self: end;
+			}
+		}
+
+		.content {
+			display: flex;
+			flex-direction: column;
+			width: 80%;
+			margin: auto;
+
+			h3 {
+				font-size: 80rem;
+				line-height: 80rem;
+				margin-bottom: 30rem;
+			}
+
+			ul {
+				li {
+					list-style: none;
+					font-family: "Roboto", sans-serif;
+					font-size: 30rem;
+					line-height: 30rem;
+					margin-bottom: 20rem;
+
+					span {
+						font-size: 22rem;
+					}
+				}
+			}
+			.left {
+				flex: 1;
+				text-align: left;
+				padding: 20rem;
+				border-right: none;
+			}
+			.right {
+				flex: 1;
+				padding: 20rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 968px) {
+	.formation {
+		.header {
+			h2 {
+				font-size: 150rem;
+				line-height: 80rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.formation {
+		.header {
+			h2 {
+				font-size: 90rem;
+				line-height: 40rem;
+			}
+		}
+
+		.content {
+			width: 90%;
+
+			h3 {
+				font-size: 50rem;
+				line-height: 40rem;
+				margin-bottom: 30rem;
+			}
+
+			ul {
+				li {
+					list-style: none;
+					font-family: "Roboto", sans-serif;
+					font-size: 22rem;
+					line-height: 22rem;
+					margin-bottom: 20rem;
+
+					span {
+						font-size: 18rem;
+					}
+				}
+			}
+			.left {
+				flex: 1;
+				text-align: left;
+				padding: 20rem;
+				border-right: none;
+			}
+			.right {
+				flex: 1;
+				padding: 20rem;
+			}
 		}
 	}
 }

@@ -12,7 +12,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 20rem;
 		font-size: 20rem;
 		font-family: "Roboto", sans-serif;
 		cursor: pointer;
@@ -28,6 +27,7 @@
 			color: var(--white);
 			display: none;
 			transition: all 0.5s;
+			z-index: 50;
 		}
 
 		&:hover {

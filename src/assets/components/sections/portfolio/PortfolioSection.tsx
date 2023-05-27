@@ -32,9 +32,7 @@ const PortfolioSection = ({ language }: IPortfolioSectionProps) => {
 	return (
 		<section className="portfolio" id="portfolio-section">
 			<div className="left">
-				<h2>
-					03/
-					<br />
+				<h2 className="dektop-title">
 					PO
 					<br />
 					RT
@@ -45,6 +43,11 @@ const PortfolioSection = ({ language }: IPortfolioSectionProps) => {
 					<br />
 					O.
 				</h2>
+				<h2 className="mobile-title">
+					PORT
+					<br />
+					FOLIO.
+				</h2>
 			</div>
 			<div className="right">
 				<div className="filters">
@@ -53,7 +56,9 @@ const PortfolioSection = ({ language }: IPortfolioSectionProps) => {
 							<button
 								key={item.type}
 								style={{
-									backgroundColor: selectedFilter === item.type ? "#c3a060" : "",
+									backgroundColor: selectedFilter === item.type ? "#eebd64" : "",
+									color: selectedFilter === item.type ? "#111" : "#fff",
+									fontWeight: "bold",
 								}}
 								onClick={() => setSelectedFilter(item.type)}
 							>
@@ -63,7 +68,7 @@ const PortfolioSection = ({ language }: IPortfolioSectionProps) => {
 							<button
 								key={item.type}
 								style={{
-									backgroundColor: selectedFilter === item.type ? "#c3a060" : "",
+									backgroundColor: selectedFilter === item.type ? "#eebd64" : "",
 								}}
 								onClick={() => setSelectedFilter(item.type)}
 							>

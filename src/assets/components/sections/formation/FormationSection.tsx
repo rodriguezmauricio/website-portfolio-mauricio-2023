@@ -12,11 +12,11 @@ const FormationSection = ({ language }: IFormationSection) => {
 				<>
 					<div className="header">
 						<h2>
-							<span className="courses">04/Courses.</span>
+							<span className="courses">Courses.</span>
 						</h2>
-						<h2>04/Formation.</h2>
+						<h2>Formation.</h2>
 						<h2>
-							<span className="certificate">04/Certificates.</span>
+							<span className="certificate">Certificates.</span>
 						</h2>
 					</div>
 
@@ -31,8 +31,7 @@ const FormationSection = ({ language }: IFormationSection) => {
 							<ul>
 								{formationDev.map((item) => (
 									<li key={item.title}>
-										{item.title} <br />
-										<span>{`${item.local} (${item.year})`}</span>
+										{item.title} • <span>{`${item.local} (${item.year})`}</span>
 									</li>
 								))}
 							</ul>
@@ -41,7 +40,7 @@ const FormationSection = ({ language }: IFormationSection) => {
 						<div className="right">
 							<h3>
 								<span>
-									Web Design <br />
+									Web Design &<br />
 									Graphic Design
 								</span>
 							</h3>
@@ -60,11 +59,11 @@ const FormationSection = ({ language }: IFormationSection) => {
 				<>
 					<div className="header">
 						<h2>
-							<span className="courses">04/Cursos.</span>
+							<span className="courses">Cursos.</span>
 						</h2>
-						<h2>04/Formação.</h2>
+						<h2>Formação.</h2>
 						<h2>
-							<span className="certificate">04/Certificados.</span>
+							<span className="certificate">Certificados.</span>
 						</h2>
 					</div>
 
@@ -89,7 +88,7 @@ const FormationSection = ({ language }: IFormationSection) => {
 						<div className="right">
 							<h3>
 								<span>
-									Web Design <br />
+									Web Design &<br />
 									Design Gráfico
 								</span>
 							</h3>

@@ -12,15 +12,16 @@ const AboutSection = ({ language }: IAboutSection) => {
 				{language === "en" ? (
 					<>
 						<div className="title">
-							<h2>02/About.</h2>
+							<h2>About.</h2>
 						</div>
 						<article className="description">
+							<h2>Who am I?</h2>
 							<p>
-								For over over a decade I’ve been creating websites with beautiful
-								design that solves my clients problems. Now I’m taking a step
-								forward in order to became a full time frontend web and mobile
-								developer who will bring technical and visual aspects together, to
-								deliver even a better experience to whom I’m working with.
+								For over a decade I’ve been creating websites with beautiful design
+								that solves my clients problems. Now I’m taking a step forward in
+								order to became a full time frontend web and mobile developer who
+								will bring technical and visual aspects together, to deliver even a
+								better experience to whom I’m working with.
 							</p>
 							<p>
 								I’m passionate about digital products. Great presentations, clean
@@ -32,13 +33,14 @@ const AboutSection = ({ language }: IAboutSection) => {
 
 						<div className="is-that-you-container">
 							<article className="left">
+								<h2>Current Goal</h2>
 								<p>
 									I’m a computer science student who spends the whole day coding
 									and learning the best practices to write clean and
 									understandable code to become the best possible developer.
 								</p>
 								<p>
-									I’m free for freelance but I'm more interested in a Frontend
+									I’m free for freelancing but I'm more interested in a Frontend
 									Developer position in a great company that’s willing to receive
 									me in the their team.
 								</p>
@@ -55,9 +57,10 @@ const AboutSection = ({ language }: IAboutSection) => {
 				) : (
 					<>
 						<div className="title">
-							<h2>02/Sobre.</h2>
+							<h2>Sobre.</h2>
 						</div>
 						<article className="description">
+							<h2>Quem Sou Eu?</h2>
 							<p>
 								Há mais de uma década, venho criando sites com um belo design que
 								resolve os problemas dos meus clientes. Agora, estou dando um passo
@@ -75,6 +78,7 @@ const AboutSection = ({ language }: IAboutSection) => {
 
 						<div className="is-that-you-container">
 							<article className="left">
+								<h2>Objetivo Atual</h2>
 								<p>
 									Sou um estudante de Ciência da Computação que passa o dia
 									inteiro digitando código e aprendendo sobre as melhores práticas
@@ -97,8 +101,8 @@ const AboutSection = ({ language }: IAboutSection) => {
 					</>
 				)}
 			</div>
-			<div className="right">
-				<img src={imagemSobre} alt="Mauricio Rodriguez" />
+			<div className="right-img">
+				<img className="img" src={imagemSobre} alt="Mauricio Rodriguez" />
 			</div>
 		</section>
 	);
