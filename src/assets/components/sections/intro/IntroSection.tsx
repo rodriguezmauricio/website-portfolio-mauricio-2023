@@ -1,5 +1,5 @@
 import "./intro-section.scss";
-import { motion, useTransform, useScroll, useAnimate, stagger, animate } from "framer-motion";
+import { motion, useTransform, useScroll, stagger, animate } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 
 import AboutSection from "../about/AboutSection";
