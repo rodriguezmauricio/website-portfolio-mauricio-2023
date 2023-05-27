@@ -3,6 +3,7 @@ import Button from "../../../button/Button";
 import { motion } from "framer-motion";
 
 interface IPortfolioCoverProps {
+	language: string;
 	projectName: string;
 	projectLink?: string;
 	repositoryLink?: string;
@@ -11,6 +12,7 @@ interface IPortfolioCoverProps {
 }
 
 const PortfolioCover = ({
+	language,
 	projectName,
 	projectLink,
 	repositoryLink,
@@ -37,19 +39,24 @@ const PortfolioCover = ({
 			<div className="info">
 				<h3>{projectName}</h3>
 				<div className="buttons">
-					{projectLink && (
-						<div className="button">
-							<Button textColor="#111" link={projectLink} border="#eebd64">
-								VIEW PROJECT
-							</Button>
-						</div>
-					)}
 					{repositoryLink && (
-						<div className="button">
-							<Button textColor="#111" link={repositoryLink} border="#eebd64">
-								VIEW REPOSITORY
+						<motion.div whileHover={{ scale: 1.1 }} className="button">
+							<Button
+								textColor="#111"
+								link={repositoryLink}
+								border="#eebd64"
+								isGithub
+							>
+								{language === "en" ? "VIEW REPOSITORY" : "VER REPOSITÓRIO"}
 							</Button>
-						</div>
+						</motion.div>
+					)}
+					{projectLink && (
+						<motion.div whileHover={{ scale: 1.1 }} className="button">
+							<Button textColor="#111" link={projectLink} border="#eebd64">
+								{language === "en" ? "VIEW PROJECT" : "VER PROJETO"}
+							</Button>
+						</motion.div>
 					)}
 				</div>
 			</div>

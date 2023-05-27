@@ -92,6 +92,7 @@ const PortfolioSection = ({ language }: IPortfolioSectionProps) => {
 								transition={{ duration: 0.5 }}
 							>
 								<PortfolioCover
+									language={language}
 									projectName={item.projectName}
 									projectLink={item.projectLink}
 									repositoryLink={item.repositoryLink}

@@ -1,5 +1,13 @@
 .mainButton {
+	gap: 50px;
 	border: none;
 	padding: 15rem 30rem;
 	cursor: pointer;
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10rem;
+	}
 }

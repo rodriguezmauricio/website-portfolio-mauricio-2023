@@ -136,8 +136,7 @@ export const portfolioContent = [
 		projectName: "Ramana Borba (Dancer Influencer)",
 		projectLink: "http://ramanaborbaoficial.com.br/",
 		repositoryLink: "",
-		bgImage:
-			"https://cdn.dribbble.com/users/124454/screenshots/17292986/media/9f6fb859e4bb3ca7b35992ad09981802.png?compress=1&resize=1000x750&vertical=top",
+		bgImage: "src/assets/images/ramana-min.jpg",
 		projectType: "real",
 	},
 	{

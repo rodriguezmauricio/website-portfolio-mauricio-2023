@@ -1,12 +1,15 @@
 import "./button.scss";
 import { motion } from "framer-motion";
 
+import { FiArrowUpRight, FiGithub } from "react-icons/fi";
+
 interface IButtonProps {
 	children: string;
 	color?: string;
 	textColor?: string;
 	border?: string;
 	link?: string;
+	isGithub?: boolean;
 }
 
 const Button = ({
@@ -15,6 +18,7 @@ const Button = ({
 	textColor = "#eebd64",
 	border = "none",
 	link,
+	isGithub = false,
 }: IButtonProps) => {
 	return (
 		<motion.button
@@ -23,7 +27,7 @@ const Button = ({
 			style={{ backgroundColor: color, color: textColor, border: `3px solid ${border}` }}
 		>
 			<a href={link} target="_blank">
-				{children}
+				{children} {isGithub ? <FiGithub size={20} /> : <FiArrowUpRight size={20} />}
 			</a>
 		</motion.button>
 	);
