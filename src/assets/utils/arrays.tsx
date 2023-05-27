@@ -117,22 +117,6 @@ export const formationDesign = [
 
 export const portfolioContent = [
 	{
-		projectName: "netflix app",
-		projectLink: "",
-		repositoryLink: "",
-		bgImage:
-			"https://cdn.dribbble.com/users/1858541/screenshots/14532125/media/e3ef16a597cb3a1000914d7fe9d70b77.png?compress=1&resize=1000x750&vertical=top",
-		projectType: "real",
-	},
-	{
-		projectName: "Personal Website",
-		projectLink: "",
-		repositoryLink: "",
-		bgImage:
-			"https://cdn.dribbble.com/users/4390150/screenshots/15495922/media/79d94e27561f9c575b6b68af80a9af70.jpg?compress=1&resize=1000x750&vertical=top",
-		projectType: "real",
-	},
-	{
 		projectName: "Ramana Borba (Dancer Influencer)",
 		projectLink: "http://ramanaborbaoficial.com.br/",
 		repositoryLink: "",
@@ -143,15 +127,14 @@ export const portfolioContent = [
 		projectName: "Franciale Melo (Travel Blog)",
 		projectLink: "https://francialemelo.com.br/",
 		repositoryLink: "",
-		bgImage: "https://meuwebdesigner.com.br/wp-content/uploads/2023/05/fran-min.jpg",
+		bgImage: "https://meuwebdesigner.com.br/wp-content/uploads/2023/05/fran-min-1.jpg",
 		projectType: "real",
 	},
 	{
 		projectName: "Martz Todo list app",
 		projectLink: "https://martz-todo-list-react-01.vercel.app/",
 		repositoryLink: "https://github.com/rodriguezmauricio/martz-todo-list-react",
-		bgImage:
-			"https://cdn.dribbble.com/users/124454/screenshots/17292806/media/4948ea25318ef78f8b004de6ffcd1758.png?compress=1&resize=1000x750&vertical=top",
+		bgImage: "https://meuwebdesigner.com.br/wp-content/uploads/2023/05/todo-list-min.jpg",
 		projectType: "personal",
 	},
 ];
