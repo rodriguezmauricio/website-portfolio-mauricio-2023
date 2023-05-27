@@ -143,8 +143,7 @@ export const portfolioContent = [
 		projectName: "Franciale Melo (Travel Blog)",
 		projectLink: "https://francialemelo.com.br/",
 		repositoryLink: "",
-		bgImage:
-			"https://cdn.dribbble.com/users/4177161/screenshots/13948973/media/b1da13bdf38c33be3cb2ec8c106bfe21.png?compress=1&resize=1000x750&vertical=top",
+		bgImage: "../images/fran-min.jpg",
 		projectType: "real",
 	},
 	{
