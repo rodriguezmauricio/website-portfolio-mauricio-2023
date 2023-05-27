@@ -136,14 +136,14 @@ export const portfolioContent = [
 		projectName: "Ramana Borba (Dancer Influencer)",
 		projectLink: "http://ramanaborbaoficial.com.br/",
 		repositoryLink: "",
-		bgImage: "src/assets/images/ramana-min.jpg",
+		bgImage: "https://meuwebdesigner.com.br/wp-content/uploads/2023/05/ramana-min.jpg",
 		projectType: "real",
 	},
 	{
 		projectName: "Franciale Melo (Travel Blog)",
 		projectLink: "https://francialemelo.com.br/",
 		repositoryLink: "",
-		bgImage: "../images/fran-min.jpg",
+		bgImage: "https://meuwebdesigner.com.br/wp-content/uploads/2023/05/fran-min.jpg",
 		projectType: "real",
 	},
 	{
