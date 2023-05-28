@@ -60,7 +60,7 @@
 				align-items: center;
 				padding: 50rem;
 				font-size: 100rem;
-				line-height: 80rem;
+				line-height: 100rem;
 				position: relative;
 			}
 		}
@@ -185,7 +185,7 @@
 					border-right: 1px solid var(--white);
 					h3 {
 						font-size: 80rem;
-						line-height: 60rem;
+						line-height: 70rem;
 					}
 				}
 			}
@@ -251,7 +251,73 @@
 					padding-top: 0rem;
 					h3 {
 						font-size: 80rem;
-						line-height: 60rem;
+						line-height: 70rem;
+					}
+				}
+			}
+		}
+		.right-img {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 468px) {
+	.about {
+		display: flex;
+		flex-direction: column;
+
+		.left {
+			border-right: none;
+
+			.title {
+				border-bottom: 1px solid var(--white);
+				border-right: 1px solid var(--white);
+
+				h2 {
+					font-size: 70rem;
+				}
+			}
+
+			.description {
+				border-bottom: 1px solid var(--white);
+				border-left: 1px solid var(--white);
+
+				h2 {
+					font-size: 36rem;
+					padding-left: 20rem;
+					color: var(--white);
+				}
+
+				p {
+					padding: 20rem;
+				}
+			}
+
+			.is-that-you-container {
+				display: flex;
+				flex-direction: column;
+				flex: 3;
+
+				.left {
+					border-right: 1px solid var(--white);
+					h2 {
+						font-size: 36rem;
+						padding-left: 20rem;
+						color: var(--white);
+					}
+				}
+
+				.right {
+					border-bottom: 1px solid var(--white);
+					border-left: none;
+					border-right: 1px solid var(--white);
+					justify-content: start;
+					padding-left: 20rem;
+					padding-top: 0rem;
+					h3 {
+						font-size: 80rem;
+						line-height: 70rem;
 					}
 				}
 			}

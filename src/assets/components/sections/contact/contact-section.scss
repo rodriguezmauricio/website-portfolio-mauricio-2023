@@ -39,7 +39,7 @@
 					border-bottom: 1px solid var(--primary);
 					font-size: 40rem;
 					padding: 10rem;
-					font-family: "Playfair", serif;
+					font-family: var(--header);
 					outline: 0;
 					color: var(--white);
 
@@ -54,7 +54,7 @@
 					border-bottom: 1px solid var(--primary);
 					font-size: 40rem;
 					padding: 10rem;
-					font-family: "Playfair", serif;
+					font-family: var(--header);
 					outline: 0;
 					color: var(--white);
 				}
@@ -64,7 +64,7 @@
 					border: none;
 					background-color: var(--primary);
 					font-size: 40rem;
-					font-family: "Playfair", serif;
+					font-family: var(--header);
 					font-weight: bold;
 					cursor: pointer;
 					transition: all 0.2s;
@@ -111,7 +111,7 @@
 						border-bottom: 1px solid var(--primary);
 						font-size: 30rem;
 						padding: 10rem;
-						font-family: "Playfair", serif;
+						font-family: var(--header);
 						outline: 0;
 						color: var(--white);
 
@@ -126,7 +126,7 @@
 						border-bottom: 1px solid var(--primary);
 						font-size: 30rem;
 						padding: 10rem;
-						font-family: "Playfair", serif;
+						font-family: var(--header);
 						outline: 0;
 						color: var(--white);
 					}
@@ -136,7 +136,7 @@
 						border: none;
 						background-color: var(--primary);
 						font-size: 30rem;
-						font-family: "Playfair", serif;
+						font-family: var(--header);
 						font-weight: bold;
 						cursor: pointer;
 						transition: all 0.2s;
@@ -163,8 +163,8 @@
 			.left {
 				flex: 1;
 				h2 {
-					font-size: 100rem;
-					line-height: 80rem;
+					font-size: 70rem;
+					line-height: 60rem;
 				}
 			}
 		}

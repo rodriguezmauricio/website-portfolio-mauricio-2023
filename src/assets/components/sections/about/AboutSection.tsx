@@ -18,10 +18,10 @@ const AboutSection = ({ language }: IAboutSection) => {
 							<h2>Who am I?</h2>
 							<p>
 								For over a decade I’ve been creating websites with beautiful design
-								that solves my clients problems. Now I’m taking a step forward in
-								order to became a full time frontend web and mobile developer who
-								will bring technical and visual aspects together, to deliver even a
-								better experience to whom I’m working with.
+								that solves my clients problems. Now I’m taking a step forward to
+								become a full time frontend web and mobile developer who will bring
+								technical and visual aspects together, to deliver even a better
+								experience to whom I’m working with.
 							</p>
 							<p>
 								I’m passionate about digital products. Great presentations, clean

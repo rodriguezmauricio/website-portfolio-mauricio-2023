@@ -186,3 +186,48 @@
 		}
 	}
 }
+
+@media (max-width: 468px) {
+	.formation {
+		.header {
+			h2 {
+				font-size: 70rem;
+				line-height: 40rem;
+			}
+		}
+
+		.content {
+			width: 90%;
+
+			h3 {
+				font-size: 50rem;
+				line-height: 40rem;
+				margin-bottom: 30rem;
+			}
+
+			ul {
+				li {
+					list-style: none;
+					font-family: "Roboto", sans-serif;
+					font-size: 22rem;
+					line-height: 22rem;
+					margin-bottom: 20rem;
+
+					span {
+						font-size: 18rem;
+					}
+				}
+			}
+			.left {
+				flex: 1;
+				text-align: left;
+				padding: 20rem;
+				border-right: none;
+			}
+			.right {
+				flex: 1;
+				padding: 20rem;
+			}
+		}
+	}
+}
