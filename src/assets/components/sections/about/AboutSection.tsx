@@ -21,9 +21,9 @@ const AboutSection = ({ language }: IAboutSection) => {
 		offset: ["start end", "end start"],
 	}).scrollYProgress;
 
-	const opacity = useTransform(leftToRight, [0, 0.3], [0, 1]);
-	const xleftToRight = useTransform(leftToRight, [0, 0.3], [-100, 0]);
-	const xrightToLeft = useTransform(rightToLeft, [0, 0.3], [100, 0]);
+	const opacity = useTransform(leftToRight, [0, 0.4], [0, 1]);
+	const xleftToRight = useTransform(leftToRight, [0, 0.4], [-100, 0]);
+	const xrightToLeft = useTransform(rightToLeft, [0, 0.4], [100, 0]);
 
 	return (
 		<section className="about" id="about-section">

@@ -1,95 +1,33 @@
 .portfolio {
 	width: 100%;
-	margin: auto;
 	display: flex;
-	position: relative;
 	margin-bottom: 50rem;
-	overflow-x: hidden;
 
 	.portfolio-content {
+		position: relative;
 		width: 80%;
 		margin: auto;
-	}
-
-	.left {
-		flex: 1;
-		h2 {
-			position: sticky;
-			top: 90px;
-			font-size: 200rem;
-			line-height: 150rem;
-
-			&.mobile-title {
-				display: none;
-			}
-		}
-	}
-
-	.right {
-		flex: 3;
 		display: flex;
-		flex-direction: column;
-		gap: 50rem;
-
-		.filters {
-			display: flex;
-			gap: 30rem;
-
-			button {
-				background-color: var(--bg);
-				border: none;
-				border-bottom: 1px solid var(--primary);
-				color: var(--white);
-				padding: 15rem 30rem;
-				font-size: 20rem;
-				cursor: pointer;
-				transition: all 0.3s;
-
-				&:hover {
-					background: linear-gradient(
-						to bottom,
-						transparent 90%,
-						var(--primary) 90%,
-						var(--primary) 100%
-					);
-					padding-top: -10px;
-				}
-			}
-		} //end filters
-
-		.content {
-			display: flex;
-			flex-direction: column;
-			gap: 50rem;
-		}
-	}
-}
-
-@media (max-width: 1200px) {
-	.portfolio {
-		display: flex;
-		flex-direction: column;
 
 		.left {
 			flex: 1;
 			h2 {
-				display: none;
 				position: sticky;
 				top: 90px;
 				font-size: 200rem;
 				line-height: 150rem;
 
 				&.mobile-title {
-					display: block;
-					position: static;
-					margin-bottom: 50rem;
+					display: none;
 				}
 			}
 		}
 
 		.right {
+			flex: 3;
 			display: flex;
 			flex-direction: column;
+			gap: 50rem;
 
 			.filters {
 				display: flex;
@@ -100,7 +38,7 @@
 					border: none;
 					border-bottom: 1px solid var(--primary);
 					color: var(--white);
-					padding: 5rem 10rem;
+					padding: 15rem 30rem;
 					font-size: 20rem;
 					cursor: pointer;
 					transition: all 0.3s;
@@ -116,6 +54,75 @@
 					}
 				}
 			} //end filters
+
+			.content {
+				display: flex;
+				flex-direction: column;
+				gap: 50rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.portfolio {
+		display: flex;
+		flex-direction: column;
+		overflow-x: hidden;
+
+		.portfolio-content {
+			position: relative;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+
+			.left {
+				flex: 1;
+				h2 {
+					display: none;
+					position: sticky;
+					top: 90px;
+					font-size: 200rem;
+					line-height: 150rem;
+
+					&.mobile-title {
+						display: block;
+						position: static;
+						margin-bottom: 50rem;
+					}
+				}
+			}
+
+			.right {
+				display: flex;
+				flex-direction: column;
+
+				.filters {
+					display: flex;
+					gap: 30rem;
+
+					button {
+						background-color: var(--bg);
+						border: none;
+						border-bottom: 1px solid var(--primary);
+						color: var(--white);
+						padding: 5rem 10rem;
+						font-size: 20rem;
+						cursor: pointer;
+						transition: all 0.3s;
+
+						&:hover {
+							background: linear-gradient(
+								to bottom,
+								transparent 90%,
+								var(--primary) 90%,
+								var(--primary) 100%
+							);
+							padding-top: -10px;
+						}
+					}
+				} //end filters
+			}
 		}
 	}
 }
@@ -125,31 +132,37 @@
 		display: flex;
 		flex-direction: column;
 
-		.left {
-			flex: 1;
-			h2 {
-				display: none;
-				position: sticky;
-				top: 90px;
-				font-size: 100rem;
-				line-height: 80rem;
+		.portfolio-content {
+			position: relative;
+			margin: auto;
+			display: flex;
 
-				&.mobile-title {
-					display: block;
-					position: static;
-					margin-bottom: 50rem;
+			.left {
+				flex: 1;
+				h2 {
+					display: none;
+					position: sticky;
+					top: 90px;
+					font-size: 100rem;
+					line-height: 80rem;
+
+					&.mobile-title {
+						display: block;
+						position: static;
+						margin-bottom: 50rem;
+					}
 				}
 			}
-		}
 
-		.right {
-			display: flex;
-			flex-direction: column;
-
-			.filters {
+			.right {
 				display: flex;
-				gap: 30rem;
-			} //end filters
+				flex-direction: column;
+
+				.filters {
+					display: flex;
+					gap: 30rem;
+				} //end filters
+			}
 		}
 	}
 }
@@ -159,31 +172,36 @@
 		display: flex;
 		flex-direction: column;
 
-		.left {
-			flex: 1;
-			h2 {
-				display: none;
-				position: sticky;
-				top: 90px;
-				font-size: 70rem;
-				line-height: 60rem;
+		.portfolio-content {
+			position: relative;
+			margin: auto;
+			display: flex;
+			.left {
+				flex: 1;
+				h2 {
+					display: none;
+					position: sticky;
+					top: 90px;
+					font-size: 70rem;
+					line-height: 60rem;
 
-				&.mobile-title {
-					display: block;
-					position: static;
-					margin-bottom: 50rem;
+					&.mobile-title {
+						display: block;
+						position: static;
+						margin-bottom: 50rem;
+					}
 				}
 			}
-		}
 
-		.right {
-			display: flex;
-			flex-direction: column;
-
-			.filters {
+			.right {
 				display: flex;
-				gap: 30rem;
-			} //end filters
+				flex-direction: column;
+
+				.filters {
+					display: flex;
+					gap: 30rem;
+				} //end filters
+			}
 		}
 	}
 }
