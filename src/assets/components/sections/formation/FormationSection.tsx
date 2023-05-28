@@ -23,7 +23,7 @@ const FormationSection = ({ language }: IFormationSection) => {
 	}).scrollYProgress;
 
 	const centerOpacity = useScroll({
-		target: rightRef,
+		target: centerRef,
 		offset: ["start end", "end start"],
 	}).scrollYProgress;
 
