@@ -7,6 +7,7 @@ import ContactSection from "./assets/components/sections/contact/ContactSection"
 import ResumeSection from "./assets/components/sections/resume/ResumeSection";
 import Navigation from "./assets/components/navigation/Navigation";
 import { useState, useEffect } from "react";
+import Footer from "./assets/components/Footer/Footer";
 
 function App() {
 	const [language, setLanguage] = useState("en");
@@ -54,19 +55,22 @@ function App() {
 	};
 
 	return (
-		<main>
+		<>
 			<Navigation
 				language={language}
 				setLanguage={setLanguage}
 				scrollToSection={scrollToSection}
 				getMenuItemColor={getMenuItemColor}
 			/>
-			<IntroSection language={language} />
-			<PortfolioSection language={language} />
-			<FormationSection language={language} />
-			<ResumeSection language={language} />
-			<ContactSection language={language} />
-		</main>
+			<main>
+				<IntroSection language={language} />
+				<PortfolioSection language={language} />
+				<FormationSection language={language} />
+				<ResumeSection language={language} />
+				<ContactSection language={language} />
+			</main>
+			<Footer />
+		</>
 	);
 }
 
