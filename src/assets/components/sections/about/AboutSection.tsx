@@ -1,4 +1,6 @@
 import "./about-section.scss";
+import { useRef } from "react";
+import { motion, useTransform, useScroll } from "framer-motion";
 
 interface IAboutSection {
 	language: string;
@@ -6,11 +8,28 @@ interface IAboutSection {
 
 import imagemSobre from "../../../images/phone-img.png";
 const AboutSection = ({ language }: IAboutSection) => {
+	const leftRef = useRef(null);
+	const rightRef = useRef(null);
+
+	const leftToRight = useScroll({
+		target: leftRef,
+		offset: ["start end", "end start"],
+	}).scrollYProgress;
+
+	const rightToLeft = useScroll({
+		target: rightRef,
+		offset: ["start end", "end start"],
+	}).scrollYProgress;
+
+	const opacity = useTransform(leftToRight, [0, 0.4], [0, 1]);
+	const xleftToRight = useTransform(leftToRight, [0, 0.4], [-100, 0]);
+	const xrightToLeft = useTransform(rightToLeft, [0, 0.4], [100, 0]);
+
 	return (
 		<section className="about" id="about-section">
 			<div className="left">
 				{language === "en" ? (
-					<>
+					<motion.div ref={leftRef} style={{ opacity, x: xleftToRight }}>
 						<div className="title">
 							<h2>About.</h2>
 						</div>
@@ -19,15 +38,15 @@ const AboutSection = ({ language }: IAboutSection) => {
 							<p>
 								For over a decade I’ve been creating websites with beautiful design
 								that solves my clients problems. Now I’m taking a step forward to
-								become a full time frontend web and mobile developer who will bring
+								become a full-time frontend web and mobile developer who will bring
 								technical and visual aspects together, to deliver even a better
 								experience to whom I’m working with.
 							</p>
 							<p>
-								I’m passionate about digital products. Great presentations, clean
-								code and ambitious projects matter to me. I love details, really
-								believe that less is more, quality matters and beautiful is better
-								then ugly.
+								I am passionate about digital products. Great presentations, clean
+								code and ambitious projects are important to me. I love details,
+								really believe that less is more, quality matters and beautiful is
+								better then ugly.
 							</p>
 						</article>
 
@@ -35,14 +54,14 @@ const AboutSection = ({ language }: IAboutSection) => {
 							<article className="left">
 								<h2>Current Goal</h2>
 								<p>
-									I’m a computer science student who spends the whole day coding
-									and learning the best practices to write clean and
-									understandable code to become the best possible developer.
+									I’m a computer science student who loves coding and learning the
+									best practices to write clean and understandable code aiming to
+									become the best possible developer.
 								</p>
 								<p>
-									I’m free for freelancing but I'm more interested in a Frontend
-									Developer position in a great company that’s willing to receive
-									me in the their team.
+									I am currently available for freelancing but I'm more interested
+									in a Frontend Developer position at a great company that is
+									willing to have me on their team.
 								</p>
 							</article>
 							<div className="right">
@@ -53,9 +72,9 @@ const AboutSection = ({ language }: IAboutSection) => {
 								</h3>
 							</div>
 						</div>
-					</>
+					</motion.div>
 				) : (
-					<>
+					<motion.div ref={leftRef} style={{ opacity, x: xleftToRight }}>
 						<div className="title">
 							<h2>Sobre.</h2>
 						</div>
@@ -98,12 +117,12 @@ const AboutSection = ({ language }: IAboutSection) => {
 								</h3>
 							</div>
 						</div>
-					</>
+					</motion.div>
 				)}
 			</div>
-			<div className="right-img">
+			<motion.div className="right-img" ref={rightRef} style={{ opacity, x: xrightToLeft }}>
 				<img className="img" src={imagemSobre} alt="Mauricio Rodriguez" />
-			</div>
+			</motion.div>
 		</section>
 	);
 };

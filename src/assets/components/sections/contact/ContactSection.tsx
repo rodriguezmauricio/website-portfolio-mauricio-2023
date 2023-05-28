@@ -1,15 +1,33 @@
 import "./contact-section.scss";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 interface IContactSection {
 	language: string;
 }
 
 const ContactSection = ({ language }: IContactSection) => {
+	const leftRef = useRef(null);
+	const rightRef = useRef(null);
+
+	const leftToRight = useScroll({
+		target: leftRef,
+		offset: ["start end", "end start"],
+	}).scrollYProgress;
+
+	const rightToLeft = useScroll({
+		target: rightRef,
+		offset: ["start end", "end start"],
+	}).scrollYProgress;
+
+	const opacity = useTransform(leftToRight, [0, 0.3], [0, 1]);
+	const xLeftToRight = useTransform(leftToRight, [0, 0.3], [-100, 0]);
+	const xRightToLeft = useTransform(rightToLeft, [0, 0.3], [100, 0]);
+
 	return (
 		<section className="contact" id="contact-section">
 			<div className="content">
-				<div className="left">
+				<motion.div ref={leftRef} style={{ opacity, x: xLeftToRight }} className="left">
 					{language === "en" ? (
 						<>
 							<h2>
@@ -27,9 +45,9 @@ const ContactSection = ({ language }: IContactSection) => {
 							</h2>
 						</>
 					)}
-				</div>
+				</motion.div>
 
-				<div className="right">
+				<motion.div ref={rightRef} style={{ opacity, x: xRightToLeft }} className="right">
 					<form action="">
 						<input
 							type="text"
@@ -55,7 +73,7 @@ const ContactSection = ({ language }: IContactSection) => {
 							{language === "en" ? "Submit" : "Enviar"}
 						</motion.button>
 					</form>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);

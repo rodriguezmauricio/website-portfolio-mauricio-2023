@@ -23,6 +23,12 @@
 		p {
 			margin-top: 50rem;
 			font-size: 40rem;
+			background-color: var(--primary);
+			width: fit-content;
+			padding: 15rem 30rem;
+			i {
+				color: var(--bg);
+			}
 		}
 	} //end hero container
 }

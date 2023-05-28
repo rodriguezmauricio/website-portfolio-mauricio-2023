@@ -1,27 +1,58 @@
 import "./formation-section.scss";
 import { formationDev, formationDesign } from "../../../utils/arrays";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 interface IFormationSection {
 	language: string;
 }
 
 const FormationSection = ({ language }: IFormationSection) => {
+	const leftRef = useRef(null);
+	const rightRef = useRef(null);
+	const centerRef = useRef(null);
+
+	const leftToRight = useScroll({
+		target: leftRef,
+		offset: ["start end", "end start"],
+	}).scrollYProgress;
+
+	const rightToLeft = useScroll({
+		target: rightRef,
+		offset: ["start end", "end start"],
+	}).scrollYProgress;
+
+	const centerOpacity = useScroll({
+		target: rightRef,
+		offset: ["start end", "end start"],
+	}).scrollYProgress;
+
+	const opacity = useTransform(leftToRight, [0, 0.3], [0, 1]);
+	const xleftToRight = useTransform(leftToRight, [0, 0.3], [-200, 0]);
+	const xrightToLeft = useTransform(rightToLeft, [0, 0.3], [200, 0]);
+
 	return (
 		<section className="formation" id="formation-section">
 			{language === "en" ? (
 				<>
 					<div className="header">
-						<h2>
+						<motion.h2 ref={leftRef} style={{ opacity: opacity, x: xleftToRight }}>
 							<span className="courses">Courses.</span>
-						</h2>
-						<h2>Formation.</h2>
-						<h2>
+						</motion.h2>
+						<motion.h2 ref={centerRef} style={{ opacity: opacity }}>
+							Formation.
+						</motion.h2>
+						<motion.h2 ref={rightRef} style={{ opacity: opacity, x: xrightToLeft }}>
 							<span className="certificate">Certificates.</span>
-						</h2>
+						</motion.h2>
 					</div>
 
 					<div className="content">
-						<div className="left">
+						<motion.div
+							ref={leftRef}
+							style={{ opacity: opacity, x: xleftToRight }}
+							className="left"
+						>
 							<h3>
 								<span>
 									Frontend <br />
@@ -35,9 +66,13 @@ const FormationSection = ({ language }: IFormationSection) => {
 									</li>
 								))}
 							</ul>
-						</div>
+						</motion.div>
 
-						<div className="right">
+						<motion.div
+							ref={rightRef}
+							style={{ opacity: opacity, x: xrightToLeft }}
+							className="right"
+						>
 							<h3>
 								<span>
 									Web Design &<br />
@@ -52,7 +87,7 @@ const FormationSection = ({ language }: IFormationSection) => {
 									</li>
 								))}
 							</ul>
-						</div>
+						</motion.div>
 					</div>
 				</>
 			) : (

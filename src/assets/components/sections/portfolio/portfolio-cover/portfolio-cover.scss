@@ -151,3 +151,63 @@
 		}
 	}
 }
+
+@media (max-width: 468px) {
+	.portfolio-cover {
+		min-width: 300px;
+		max-width: 80%;
+		min-height: 300px;
+		background-color: var(--primary);
+		padding: 50rem;
+
+		position: relative;
+
+		display: flex;
+		justify-content: end;
+		align-items: end;
+
+		.tag {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 10rem 20rem;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+			&.real {
+				background-color: rgb(33, 139, 0);
+			}
+
+			&.personal {
+				background-color: cornflowerblue;
+			}
+		}
+
+		.info {
+			position: relative;
+			left: 100px;
+			max-width: 550px;
+			display: flex;
+			flex-direction: column;
+			gap: 15rem;
+
+			h3 {
+				font-size: 30rem;
+				background-color: var(--bg);
+				border: 3px solid var(--primary);
+				padding: 5rem;
+				box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+			}
+
+			.buttons {
+				display: flex;
+				flex-direction: column;
+				justify-content: end;
+				gap: 15rem;
+
+				.button {
+					box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+				}
+			}
+		}
+	}
+}
