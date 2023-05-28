@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FiArrowUpRight, FiGithub } from "react-icons/fi";
 
 interface IButtonProps {
-	children: JSX.Element;
+	children: string;
 	color?: string;
 	textColor?: string;
 	border?: string;
