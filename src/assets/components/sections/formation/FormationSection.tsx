@@ -8,6 +8,7 @@ interface IFormationSection {
 }
 
 const FormationSection = ({ language }: IFormationSection) => {
+	// BEGIN ANIMATION CONFIG
 	const leftRef = useRef(null);
 	const rightRef = useRef(null);
 	const centerRef = useRef(null);
@@ -30,6 +31,7 @@ const FormationSection = ({ language }: IFormationSection) => {
 	const opacity = useTransform(centerOpacity, [0, 0.3], [0, 1]);
 	const xleftToRight = useTransform(leftToRight, [0, 0.3], [-200, 0]);
 	const xrightToLeft = useTransform(rightToLeft, [0, 0.3], [200, 0]);
+	// END ANIMATION CONFIG
 
 	return (
 		<section className="formation" id="formation-section">
