@@ -22,12 +22,7 @@ const FormationSection = ({ language }: IFormationSection) => {
 		offset: ["start end", "end start"],
 	}).scrollYProgress;
 
-	const centerOpacity = useScroll({
-		target: rightRef,
-		offset: ["start end", "end start"],
-	}).scrollYProgress;
-
-	const opacity = useTransform(centerOpacity, [0, 0.3], [0, 1]);
+	const opacity = useTransform(leftToRight, [0, 0.3], [0, 1]);
 	const xleftToRight = useTransform(leftToRight, [0, 0.3], [-200, 0]);
 	const xrightToLeft = useTransform(rightToLeft, [0, 0.3], [200, 0]);
 
