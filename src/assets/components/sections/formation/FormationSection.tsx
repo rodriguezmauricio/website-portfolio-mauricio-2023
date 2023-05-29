@@ -64,7 +64,8 @@ const FormationSection = ({ language }: IFormationSection) => {
 							<ul>
 								{formationDev.map((item) => (
 									<li key={item.title}>
-										{item.title} • <span>{`${item.local} (${item.year})`}</span>
+										{item.title} <br />
+										<span>{`${item.local} (${item.year})`}</span>
 									</li>
 								))}
 							</ul>

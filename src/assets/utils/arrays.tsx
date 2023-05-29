@@ -25,12 +25,6 @@ export const navMenu = [
 	},
 	{
 		id: "05/",
-		title: "Resume",
-		titlePt: "Curriculo",
-		sectionId: "resume-section",
-	},
-	{
-		id: "06/",
 		title: "Contact",
 		titlePt: "Contato",
 		sectionId: "contact-section",

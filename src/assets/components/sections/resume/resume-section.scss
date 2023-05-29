@@ -1,6 +1,6 @@
 .resume {
 	width: 100%;
-	padding: 100px 0;
+	padding: 50px 0;
 	overflow: hidden;
 
 	.content {
@@ -10,6 +10,24 @@
 
 	h2 {
 		font-size: 200rem;
+		line-height: 200rem;
+	}
+
+	h3 {
+		font-size: 50rem;
+	}
+
+	.phrase {
+		color: var(--white);
+		display: inline-flex;
+		font-size: 10vw;
+		margin-right: 3vw;
+		line-height: 10vw;
+		font-family: var(--header);
+
+		span {
+			color: var(--primary);
+		}
 	}
 }
 

@@ -18,6 +18,7 @@ interface INavigationProps {
 const Navigation = ({
 	language,
 	setLanguage,
+
 	scrollToSection,
 	getMenuItemColor,
 }: INavigationProps) => {
@@ -131,7 +132,12 @@ const Navigation = ({
 						<div className="icon flag" onClick={() => setLanguage("en")}>
 							<motion.img whileHover={{ scale: 1.2 }} src={UkFlag} alt="English" />
 						</div>
-						<div className="icon" onClick={() => setLanguage("pt")}>
+						<div
+							className="icon"
+							onClick={() => {
+								setLanguage("pt");
+							}}
+						>
 							<motion.img
 								whileHover={{ scale: 1.2 }}
 								src={BrazilFlag}

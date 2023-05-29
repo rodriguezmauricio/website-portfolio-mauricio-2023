@@ -52,8 +52,6 @@ const Technologies = () => {
 		}
 	}, [width]);
 
-	console.log(width);
-
 	const technologies = [
 		{
 			tech: "HTML5",

@@ -17,8 +17,8 @@
 		padding-top: 90px;
 
 		h1 {
-			font-size: 200rem;
-			line-height: 180px;
+			font-size: 12vw;
+			line-height: 10vw;
 		}
 		p {
 			margin-top: 50rem;
@@ -36,10 +36,10 @@
 @media (max-width: 1450px) {
 	.hero-section {
 		.hero-container {
-			h1 {
-				font-size: 160rem;
-				line-height: 130px;
-			}
+			// h1 {
+			// 	font-size: 160rem;
+			// 	line-height: 130px;
+			// }
 			p {
 				margin-top: 50rem;
 				font-size: 35rem;
