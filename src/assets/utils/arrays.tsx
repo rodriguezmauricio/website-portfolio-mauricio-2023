@@ -138,4 +138,12 @@ export const portfolioContent = [
     bgImage: "https://meuwebdesigner.com.br/wp-content/uploads/2023/05/barra-rio-min.jpg",
     projectType: "real",
   },
+  {
+    projectName: "React Components Portfolio",
+    projectLink: "https://martz-port-micro-components.vercel.app/",
+    repositoryLink: "https://github.com/rodriguezmauricio/port-micro-components",
+    bgImage:
+      "https://meuwebdesigner.com.br/wp-content/uploads/2023/05/components-portfolio-min.jpg",
+    projectType: "personal",
+  },
 ];

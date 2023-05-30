@@ -1,39 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Playfair:wght@400;600&family=Roboto:wght@300;400;500;700;900&display=swap");
 
 :root {
-	--white: #fff;
-	--primary: #eebd64;
-	--secondary: #92733a;
-	--bg: #111;
-	--header: "Playfair Display", serif;
+  --white: #fff;
+  --primary: #eebd64;
+  --secondary: #92733a;
+  --bg: #111;
+  --header: "Playfair Display", serif;
 }
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-	font-size: 6.25%;
-	font-family: "Playfair Display", serif;
+  font-size: 6.25%;
+  font-family: "Playfair Display", serif;
 }
 
 body {
-	font-size: 16rem;
-	background-color: var(--bg);
-	color: var(--white);
+  font-size: 16rem;
+  background-color: var(--bg);
+  color: var(--white);
 
-	span {
-		color: var(--primary);
-	}
+  span {
+    color: var(--primary);
+  }
 }
 
 p {
-	font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
-	text-decoration: none;
-	color: var(--bg);
+  text-decoration: none;
+  color: var(--bg);
 }
