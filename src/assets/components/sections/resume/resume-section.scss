@@ -1,58 +1,68 @@
 .resume {
-	width: 100%;
-	padding: 50px 0;
-	overflow: hidden;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
 
-	.content {
-		width: 80%;
-		margin: auto;
-	}
+  .content {
+    width: 80%;
+    margin: auto;
+  }
 
-	h2 {
-		font-size: 200rem;
-		line-height: 200rem;
-	}
+  h2 {
+    font-size: 180rem;
+    line-height: 180rem;
+  }
 
-	h3 {
-		font-size: 50rem;
-	}
+  h3 {
+    font-size: 50rem;
+  }
 
-	.phrase {
-		color: var(--white);
-		display: inline-flex;
-		font-size: 10vw;
-		margin-right: 3vw;
-		line-height: 10vw;
-		font-family: var(--header);
+  .phrase {
+    color: var(--white);
+    display: inline-flex;
+    font-size: 10vw;
+    margin-right: 3vw;
+    line-height: 10vw;
+    font-family: var(--header);
 
-		span {
-			color: var(--primary);
-		}
-	}
+    span {
+      color: var(--primary);
+    }
+  }
 }
 
 @media (max-width: 1050px) {
-	.resume {
-		h2 {
-			font-size: 150rem;
-		}
-	}
+  .resume {
+    h2 {
+      font-size: 150rem;
+    }
+
+    h3 {
+      font-size: 40rem;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-	.resume {
-		width: 90%;
-		h2 {
-			font-size: 100rem;
-		}
-	}
+  .resume {
+    width: 90%;
+    h2 {
+      font-size: 100rem;
+    }
+    h3 {
+      font-size: 35rem;
+    }
+  }
 }
 
 @media (max-width: 468px) {
-	.resume {
-		width: 90%;
-		h2 {
-			font-size: 70rem;
-		}
-	}
+  .resume {
+    width: 90%;
+    h2 {
+      font-size: 70rem;
+    }
+    h3 {
+      font-size: 25rem;
+    }
+  }
 }
